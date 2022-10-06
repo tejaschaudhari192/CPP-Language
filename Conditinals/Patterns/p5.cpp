@@ -18,7 +18,7 @@ int main()
 {
     int n,i=1,j,count;
     cout<<"Enter Value : ";
-    cin>>n;
+    cin>>n>>endl;
 
     j=1;
     while (i<=n)
