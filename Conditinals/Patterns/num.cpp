@@ -3,6 +3,7 @@
 
 /*
 Sample Output
+Enter Value : 5
 12345
 12345
 12345

@@ -2,11 +2,11 @@
 
 /* Sample Output
 Enter Value : 5
-*****
- ****
-  ***
-   **
-    *
+54321
+ 4321
+  321
+   21
+    1
                                                     */
 #include <iostream>
 using namespace std;
@@ -19,19 +19,27 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        j=2;
-        while (j<=i)
+        j=n-i;
+        while (j>=1)
         {
             cout<<" ";
-            j++;
-        }
-        
-        j = n-i;
-        while (j >= 0)
-        {
-            cout << "*";
             j--;
         }
+        
+        j = 1;
+        while (j < i)
+        {
+            cout << j;
+            j++;
+        }
+
+        j=i;
+        while (j>=1)
+        {
+            cout<<j;
+            j--;
+        }
+        
 
         cout << endl;
     }

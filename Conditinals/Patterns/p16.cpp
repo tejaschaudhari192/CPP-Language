@@ -1,12 +1,13 @@
-// Date 5/10/22
+// Date 7/10/22
 
 /*
-Sample Output
-* 
-* *
-* * *
-* * * *
-* * * * *
+Sample Outputs
+Enter Value : 5
+E 
+D D 
+C C C 
+B B B B 
+A A A A A
 */
 
 #include<iostream>
@@ -14,16 +15,24 @@ using namespace std;
 
 int main()
 {
-    int n,i=1,j;
+    int n,i=1,j,k;
+    char ch='A';
+     cout<<"Enter Value : ";
     cin>>n;
+    
     while (i<=n)
     {
         j=1;
+        ch='A'+n-i;
         while (j<=i)
         {
-            cout<<"* ";
+            cout<<ch<<" ";
             j++;
+
         }
+        ch--;
+
+
         cout<<endl;
         i++;
     }
@@ -32,4 +41,3 @@ int main()
 
 // coded by Tejas
 }
-

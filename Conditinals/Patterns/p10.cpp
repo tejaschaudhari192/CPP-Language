@@ -1,12 +1,12 @@
-// Date 5/10/22
-
+// Date 6/10/22
 
 /*
-Sample Output
-54321
-54321
-54321
-54321
+Sample Outputs
+Enter Value : 5
+1
+21
+321
+4321
 54321
 */
 
@@ -15,17 +15,22 @@ using namespace std;
 
 int main()
 {
-    int n,i=1,j;
+    int n,i=1,j,k;
     cout<<"Enter Value : ";
     cin>>n;
+    
     while (i<=n)
     {
-        j=n;
-        while (j>=1)
+        j=1;
+        k=i;
+
+        while (j<=i)
         {
-            cout<<j;
-            j--;
+            cout<<k<<" ";
+            k--;
+            j++;
         }
+
         cout<<endl;
         i++;
     }

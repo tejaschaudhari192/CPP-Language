@@ -3,11 +3,13 @@
 /* Sample Output
 Enter Value : 5
 *****
- ****
-  ***
-   **
-    *
-                                                    */
+****
+***
+**
+*
+ 
+ */
+ 
 #include <iostream>
 using namespace std;
 
@@ -19,14 +21,7 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        j=2;
-        while (j<=i)
-        {
-            cout<<" ";
-            j++;
-        }
-        
-        j = n-i;
+        j = n - i;
         while (j >= 0)
         {
             cout << "*";

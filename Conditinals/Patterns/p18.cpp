@@ -1,13 +1,15 @@
 // Date 8/10/22
 
 /* Sample Output
-Enter Value : 5
-*****
- ****
-  ***
-   **
-    *
-                                                    */
+Enter Value : 5 
+     *
+    **
+   ***
+  ****
+ *****
+ 
+ */
+ 
 #include <iostream>
 using namespace std;
 
@@ -19,18 +21,17 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        j=2;
-        while (j<=i)
-        {
-            cout<<" ";
-            j++;
-        }
-        
-        j = n-i;
+        j = n - i;
         while (j >= 0)
         {
-            cout << "*";
+            cout << " ";
             j--;
+        }
+        j = 1;
+        while (j <= i)
+        {
+            cout << "*";
+            j++;
         }
 
         cout << endl;
