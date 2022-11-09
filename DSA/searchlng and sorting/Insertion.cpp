@@ -9,13 +9,13 @@ int main()
     cout<<"Enter Size of list : ";
     cin>>n;
 
-    cout<<"Enter "<<n<<" Integers : ";
+    cout<<"Enter "<<n<<" Integers : "<<endl;
     for ( i = 0; i < n; i++)
         cin>>a[i];
 
-    cout<<"Your list : "<<endl;
+    cout<<"\nYour list : "<<endl;
     for ( i = 0; i < n; i++)
-        cout<<a[i]<<endl;
+        cout<<a[i]<<", ";
 
     for ( i = 1; i < n; i++)
     {
@@ -30,11 +30,10 @@ int main()
         a[j+1]=temp;
     }
     
-    cout<<"Sorted list : "<<endl;
+    cout<<"\nSorted list : "<<endl;
     for ( i = 0; i < n; i++)
-    {
-        cout<<a[i]<<endl;
-    }
+        cout<<a[i]<<", ";
+
 
     return 0;
 // coded by Tejas
