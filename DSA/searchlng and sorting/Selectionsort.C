@@ -13,9 +13,7 @@ void main()
   printf("Enter %d integers\n", n);
 
   for (i = 0; i < n; i++)
-{
     scanf("%d", &array[i]);
-}
 
 
   for (i = 0 ; i <(n - 1); i++) //It is for n-1 passes

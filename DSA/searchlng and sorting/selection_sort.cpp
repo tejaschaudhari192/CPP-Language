@@ -27,10 +27,17 @@ int Selectionsort(int arr[], int size)
 	int i, j;
 
 	for (i = 0; i < (size - 1); i++)
+	{
+		small_index = smallest()
 		for (j = i + 1; j < size; j++)
+		{
 			if (arr[small_index] > arr[j])
 				swap(arr[i], arr[j]);
 
+		}
+	}
+		
+			
 	return arr[size];
 }
 

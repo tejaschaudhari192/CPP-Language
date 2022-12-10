@@ -1,5 +1,7 @@
 // Date 29/10/22
 
+// Simplified Insertion sort
+
 #include <iostream>
 using namespace std;
 
@@ -26,7 +28,6 @@ int Insertionsort(int arr[], int size)
 	{
 		temp = arr[i];
 		// Backup ith element
-
 		for (j = i - 1; j >= 0; j--)
 			if (temp < arr[j])
 				arr[j + 1] = arr[j];

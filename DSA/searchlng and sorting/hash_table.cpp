@@ -39,17 +39,52 @@ void addData()
 				key=(key+1)%10;
 				if (ht[key].status==1)
 				{
-					ht[key].data
+					ht[key].data=data;
+					ht[key].status=0;
+					cout<<"Data added to table";
+					count++;
+					break;
 				}
-				
+
 			}
 			
 		}
 		
 		
 	}
+	else
+		printf("Hash table full");
 }
 
+void delData()
+{
+	int data,key,i,flag=0;
+	if (count!=0)
+	{
+		printf("Enter data to delete");
+		scanf("%d",&data);
+
+		key=data%10;
+		if (ht[key].data==data)
+		{
+			ht[key].status=1;
+			printf("Data deleted from table");
+			count--;
+		}
+		else
+		{
+			for ( i = 0; i < 10; i++)
+			{
+				key=(key+1)%10;
+				if	 
+			}
+			
+		}
+		
+		
+	}
+	
+}
 
 
 int main()

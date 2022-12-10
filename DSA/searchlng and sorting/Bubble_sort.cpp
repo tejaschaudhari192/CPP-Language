@@ -27,12 +27,20 @@ int Getarray(int arr[], int size)
 int Bubblesort(int arr[], int size)
 {
 	int i, j;
+	char c;
 
 	for (i = 1; i < size; i++) // for size-1 passes
+	{
 		for (j = 0; j < size-i; j++)
+		{
 			if (arr[j] > arr[j + 1])
 				swap(arr[j], arr[j + 1]);
+			scanf("%c",&c);
+			cout<<"\nin pass "<<i<<j+1<<"\t";
+			printarray(arr,size);
+		}	
 	
+	}		
 	return arr[size];
 }
 
