@@ -7,7 +7,7 @@ Enter Value : 5
 ***
 **
 *
- 
+
  */
  
 #include <iostream>

@@ -7,8 +7,10 @@ void printer(int n)
 	if (n == 0)
 		return;
 
-	printer(n - 1);
 	cout << n << endl;
+	printer(n - 1);
+9
+
 }
 
 int main()

@@ -17,12 +17,12 @@ int main()
 	char ch;
 	cout<<"Enter Value : ";
 	cin>>n;
-	
+
 	for (int i = 0; i < n; i++)
 	{
 		for (int s = 1; s < n-i+1; s++)
 			cout<<" ";
-		
+	
 		ch='A'+n-i-1;
 		for (int j = 0; j < i+1 ; j++)
 		{
@@ -30,7 +30,6 @@ int main()
 			ch++;
 		}
 		cout<<endl;
-		
 	}
 	return 0;
 // coded by Tejas

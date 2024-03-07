@@ -10,14 +10,12 @@ void main()
 
     for ( i = 1; i <= n; i++)
     {
-
         j=1;
         while (j<=n-i+1)
         {
             printf("%d",j);
             j++;
         }
-
         j=1;
         while (j<i)
         {
